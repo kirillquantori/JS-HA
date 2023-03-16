@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: url("../img/wood.jpg");
+    background-size: cover;
+    }
+.center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.phone { 
+    margin:auto;
+    width: 201px;
+    height: 414px;
+    border: 3px solid silver;
+    border-radius: 35px;
+    background: rgb(255,255,255);
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    padding: 15px;
+}
+.screen{
+    position: absolute;
+    transform: translateY(-2%);
+    width: 211px;
+    height: 340px;
+    background: radial-gradient(black,RGB(157,157,157));
+    overflow: hidden;    
+}
+.central_button{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 37px;
+    height: 37px;
+    background-color: rgb(255,255,255);
+    border-radius: 50%;
+    border: 3px solid silver;
+    box-sizing: border-box;
+    cursor: pointer;  
+}
+.elements{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 34px;
+    height: 3px;
+    border-radius: 2px;
+    background: dimgray;
+    box-sizing: border-box;
+}
+.elements:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -18px;
+    background: dimgray;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+.elements:after{
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    background: dimgray;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.volume_buttons{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 75px;
+    left: -2.5px;
+}
+.volume_buttons li{
+    list-style: none;
+    width: 2.5px;
+    height: 25px;
+    background: radial-gradient(black,silver);
+    margin: 7px 0;
+    border-top-left-radius: 2.5px;
+    border-bottom-left-radius: 2.5px;
+    box-shadow: inset 0 0 0 2px RGB(157,157,157);
+}
+.silent{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    left: -2.5px;
+}
+.silent li{
+    list-style: none;
+    width: 2.5px;
+    height: 17px;
+    background: radial-gradient(black,silver);
+    margin: 10px 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: inset 0 0 0 2px RGB(157,157,157);
+}
+.sleep{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 73px;
+    right: -2.5px;
+}
+.sleep li{
+    list-style: none;
+    width: 2.5px;
+    height: 25px;
+    background: radial-gradient(black,silver);
+    margin: 7px 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: inset 0 0 0 2px RGB(157,157,157);
+}
