@@ -1,0 +1,40 @@
+ body {
+    background-color: black;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    }
+img {
+      filter: invert(31%) sepia(77%) saturate(4478%) hue-rotate(111deg) brightness(94%) contrast(107%);
+      position: relative; 
+      width: 10%;
+      height: 10%;
+      top: 0%;
+      left: 0%;
+      animation: dvd 10s forwards infinite linear;
+   }
+  @keyframes dvd {
+   32% {
+      top: 0%;
+      left: 90%;
+      filter: invert(15%) sepia(99%) saturate(7442%) hue-rotate(356deg) brightness(95%) contrast(116%);
+           
+   }
+   50% {
+      top: 90%;
+      left: 90%;
+      filter: invert(31%) sepia(77%) saturate(4478%) hue-rotate(111deg) brightness(94%) contrast(107%);
+   }
+   82% {
+      top: 90%;
+      left: 0%;
+      filter: invert(19%) sepia(81%) saturate(4096%) hue-rotate(291deg) brightness(94%) contrast(103%);
+   }
+   100% {
+      top: 0%;
+      left: 0%;
+      
+   }
+}
